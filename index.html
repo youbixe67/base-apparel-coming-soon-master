@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  
+  <title>Frontend Mentor | Base Apparel coming soon page</title>
+  <style>
+    .attribution { font-size: 0.6875rem; text-align: center; position: fixed; bottom: 0;}
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body>
+  <img src="images/logo.svg" alt="logo" class="logo">
+  <div class="content">
+    <p class="big1">WE'RE</p>
+    <p class="big2">COMING</p>
+    <p class="big2">SOON</p>
+    <p class="desc">
+      Hello fellow shoppers! We're currently building our new fashion store.
+      Add your email below to stay up-to-date with announcements and our launch deals.
+    </p>
+    <div class="email">
+      <input type="text" placeholder="Email Address" id="entry" class="validEmail">
+      <img src="images/icon-error.svg" alt="false" id="errImg" class="errorImg" hidden>
+      <button type="submit" class="valid" onclick="recupMail()"><img src="images/icon-arrow.svg" alt="ok"></button>
+    </div>
+    <p id="error" hidden>Please provide a valid email</p>
+  </div>
+  
+  <footer class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge">Frontend Mentor</a>. 
+    Coded by <a href="#">Youbixe</a>.
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>
